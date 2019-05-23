@@ -1,0 +1,1 @@
+export const WEBSOCKET_PREFIX = 'REDUX_WEBSOCKET';

@@ -1,0 +1,50 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+html {
+  display: flex;
+  height: 100%;
+}
+
+body, #root, .app, .board-component {
+  flex: 1;
+  display: flex;
+}
+
+.app, .board-component {
+  flex-direction: column;
+}
+
+.board-component {
+  height: 100%;
+}
+
+.boardContainer {
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+}
+
+.boardRow {
+  flex: 1;
+  display: flex;
+}
+
+.boardCell {
+  flex: 1;
+  outline: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  user-select: none;
+}
+
+.boardCell:hover {
+  background-color: #EEEEEE;
+}
+
+.boardCell.mouse-down {
+  background-color: #DDDDDD;
+}
